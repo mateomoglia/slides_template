@@ -1,0 +1,134 @@
+\documentclass[notes,9pt, aspectratio=169,leqno]{beamer}
+
+% Notes
+\usepackage{pgfpages}
+\setbeameroption{hide notes}
+% Font
+\usepackage{helvet}
+\usepackage[default]{lato}
+\usepackage{verbatim}
+\usepackage{amsmath}
+%\usepackage{mathpazo}
+\usefonttheme[onlymath]{serif}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{pifont}
+\setstretch{1.25}
+% Tables
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{dcolumn}
+\newcolumntype{d}[0]{D{.}{.}{5}}
+% Figures
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+% Ref
+\usepackage{hyperref}
+% Tikz
+\usepackage{tikz}
+% Blocks
+\setbeamercolor{block body}{bg=orange!10}
+\setbeamercolor{block title}{fg=orange,bg=orange!20}
+% Others
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{fancybox}
+\usepackage{media9}
+% Colors and link colors
+\definecolor{blue}{RGB}{0,114,178}
+\definecolor{orange}{RGB}{225,77,23}
+\definecolor{yellow}{RGB}{240,228,66}
+\definecolor{green}{RGB}{0,158,115}
+\definecolor{red}{RGB}{212,17,89}
+% Boxes
+\usepackage{tcolorbox}
+% Bibliography
+\usepackage[round,colon]{natbib}
+\let\oldcite\cite
+\renewcommand*\cite[1]{\textcolor{green}{\footnotesize\oldcite{#1}}}
+% Slides appearance set up
+\hypersetup{
+colorlinks=true,
+linkbordercolor = {white},
+linkcolor = {blue},
+citecolor=green
+}
+\definecolor{MyBackground}{RGB}{255,253,218} % Background
+\newenvironment{transitionframe}{
+\setbeamercolor{background canvas}
+{bg=orange!90!white}
+\Huge \color{white} \centering
+\begin{frame}[plain,noframenumbering]}{
+\end{frame}
+}
+
+\setbeamercolor{frametitle}{fg=orange}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamerfont{frametitle}{size=\LARGE}
+\addtobeamertemplate{headline}{}{\vskip0.1cm}
+\setbeamercolor{title}{fg=black}
+\setbeamertemplate{footline}{%
+\raisebox{5pt}{\makebox[\paperwidth]{\hfill{ \hspace{5pt}\tiny \begin{turn}{90} Slide: \insertframenumber \end{turn} \hspace{3pt}}}}} % Logo in the bottom left corner + slide number
+\setbeamertemplate{navigation symbols}{} 
+\setbeamercolor{itemize item}{fg=gray} % Itemize and enumerate symbols 
+\setbeamercolor{itemize subitem}{fg=blue}
+\setbeamercolor{enumerate item}{fg=blue}
+\setbeamercolor{enumerate subitem}{fg=blue}
+\setbeamercolor{button}{bg=MyBackground,fg=orange,}
+
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand\footnoterule{{\hrule height 0pt}}
+
+\setbeamercolor{section in toc}{fg=orange}
+\setbeamercolor{subsection in toc}{fg=red}
+\setbeamersize{text margin left=2em,text margin right=2em} 
+
+\newenvironment{wideitemize}{\vspace{1.5em}\itemize\addtolength{\itemsep}{10pt}}{\enditemize \vspace{1.5em}} % Wide itemize
+\newenvironment{wideenumerate}{\vspace{15pt}\enumerate\addtolength{\itemsep}{15pt}}{\endenumerate} % Wide enumerate 
+
+% Metadata
+\title{\textcolor{orange}{\Huge AA AAL}}
+\author[MM]{Matéo Moglia}
+\date{\today}
+\institute[CREST]{CREST}
+
+\begin{document}
+
+% Title Slide
+\section{Introduction}
+\begin{frame}[plain,noframenumbering]
+	\begin{center}
+		{\Huge \color{orange} PRESENTATION TITLE \par}
+		\vspace{0.8cm}
+		{\Large Matéo Moglia} (CREST - IP Paris)
+		\par
+		\vspace{0.8cm}
+		\today
+		\par
+		\vspace{0.8cm}
+		\includegraphics[width=7cm]{LogoCRESTIPParis_blanc.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Purpose of this slide set}
+	\begin{center}
+		\textbf{xxxxxxx}
+	\end{center}
+	\begin{wideitemize}
+		\item Some itemized elements
+		\item here
+	\end{wideitemize}
+\end{frame}
+
+\section{Section 2}
+\begin{transitionframe}
+	This is a transition frame
+\end{transitionframe}
+
+\end{document}

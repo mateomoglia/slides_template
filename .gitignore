@@ -2,8 +2,8 @@
 
 *
 
-!.scss
-!.qmd
+!*.scss
+!*.qmd
 !.gitignore
-!.tex
-!.jpg
+!*.tex
+!*.jpg

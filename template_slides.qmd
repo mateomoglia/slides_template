@@ -1,0 +1,79 @@
+---
+title: This is a template for slides
+subtitle: With a subtitle
+format: 
+  revealjs:
+    theme: theme_mm.scss
+    menu:
+      side: left
+    slide-number: c
+    date-format: long
+    title-slide-attributes:
+            data-background-image: LogoCRESTIPParis_blanc.jpg
+            data-background-size: 30%
+            data-background-position: 75% 55%
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Matéo Moglia
+    email: mateo.moglia@gmail.com
+    affiliations: CREST - Institut Polytechnique de Paris
+    url: https://mateomoglia.github.io
+date: last-modified
+---
+
+# Transition slide {data-background=#e14d17} 
+
+<!-- 
+  Our first slide! After ## goes the slide title.
+-->
+
+## Slide title
+
+Some text about some facts
+
+::: nonincremental
+-   Then a list
+-   With some elements
+-   That are interesting
+:::
+
+::: incremental
+-   Make
+-   this
+-   list
+-   incremental
+:::
+
+## Additional theme classes
+
+### Some extra things you can do with the clean theme
+
+::: {.callout-warning}
+Here is a warning.
+:::
+
+::: {.callout-note}
+Here is a note.
+:::
+
+::: {.callout-tip}
+Here is a tip.
+:::
+
+::: {.callout-caution}
+Here is a caution
+:::
+
+::: {.callout-important}
+Here is an important note.
+:::
+
+-   `.button` class provides a Beamer-like button, e.g. [[Summary](#sec-summary)]{.button}
+
+## Summary {#sec-summary}
+
+### A minimalist and elegant presentation theme
+
+This template is based on Quarto reveal.js clean theme by [Grant McDermott](https://grantmcdermott.com).
