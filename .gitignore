@@ -1,3 +1,5 @@
+# Ignore all but .scss, .qmd, .tex and .jpg
+
 *
 !.scss
 !.qmd
