@@ -8,6 +8,7 @@ format:
       side: left
     slide-number: c
     date-format: long
+    embed-resources: true
     title-slide-attributes:
             data-background-image: LogoCRESTIPParis_blanc.jpg
             data-background-size: 30%
@@ -21,6 +22,8 @@ author:
     affiliations: CREST - Institut Polytechnique de Paris
     url: https://mateomoglia.github.io
 date: last-modified
+execute:
+  cache: true
 ---
 
 # Transition slide {data-background=#e14d17} 
